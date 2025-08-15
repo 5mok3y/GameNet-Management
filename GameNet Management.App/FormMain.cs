@@ -191,7 +191,6 @@ namespace GameNet_Management.App
                         if (formStartSession.ShowDialog() == DialogResult.OK)
                         {
                             RtlMessageBox.Show("نشست جدید با موفقیت شروع شد", "نشست جدید");
-                            BindDevices(_currentFilterServiceID);
                         }
                     }
                     else // Device is InUse
