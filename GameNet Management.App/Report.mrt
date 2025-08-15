@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <DT Ref="2" type="DataTableSource" isKey="true">
+        <Alias>DT</Alias>
+        <Columns isList="true" count="9">
+          <value>SessionID,System.String</value>
+          <value>CustomerName,System.String</value>
+          <value>DeviceName,System.String</value>
+          <value>OptionName,System.String</value>
+          <value>TotalPrice,System.String</value>
+          <value>Duration,System.String</value>
+          <value>StartDate,System.String</value>
+          <value>StartTime,System.String</value>
+          <value>EndTime,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>DT</Name>
+        <NameInSource>DT</NameInSource>
+      </DT>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <HeaderBand1 Ref="4" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0.2,26,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn FD NL SemiBold,20</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>گزارش نشست های گیم‌نت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderBand1>
+        <HeaderDT Ref="6" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.2,27.7,1.4</ClientRectangle>
+          <Components isList="true" count="10">
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>زمان پایان</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>زمان شروع</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.2,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>تاریخ ایجاد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.2,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>زمان سپری شده</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.2,0,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>مبلغ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>تعرفه
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.8,0,3.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>دستگاه</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>مشتری</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08>
+            <HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>26,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,12,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>شناسه</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09>
+            <HorizontalLinePrimitive1 Ref="16" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.2,27.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="17" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <StartCap Ref="18" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderDT</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderDT>
+        <DataDT Ref="19" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,5.4,27.7,1</ClientRectangle>
+          <Components isList="true" count="9">
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.EndTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_0>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.6,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.StartTime}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_02>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.2,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.StartDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_03>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8.2,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.Duration}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_04>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.2,0,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.TotalPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_05>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.8,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.OptionName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_06>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18.8,0,3.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.DeviceName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_07>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>22,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.CustomerName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_08>
+            <DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>26,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Vazirmatn,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09</Name>
+              <Page isRef="3" />
+              <Parent isRef="19" />
+              <Text>{DT.SessionID}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataStimulsoft_Report_Wpf_NodeTreeViewItem_Header__Items_Count_09>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>DT</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataDT</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataDT>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>130a8ed5caf94a23ba27df7348453807</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <RightToLeft>True</RightToLeft>
+      <Watermark Ref="29" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="30" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/14/2025 12:47:16 AM</ReportChanged>
+  <ReportCreated>8/14/2025 12:10:15 AM</ReportCreated>
+  <ReportFile>C:\Users\mahdi\Desktop\Report.mrt</ReportFile>
+  <ReportGuid>5cec80cf67e549c3a16f5fc3a4f2bc70</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
