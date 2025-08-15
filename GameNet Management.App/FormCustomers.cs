@@ -128,7 +128,7 @@ namespace GameNet_Management.App
                 {
                     using (UnitOfWork db = new UnitOfWork())
                     {
-                        dgvData.DataSource = db.CustomerRepository.Get(c => c.FullName.Contains(txtFilter.Text) || c.CustomerID.ToString().Contains(txtFilter.Text));
+                        dgvData.DataSource = db.CustomerRepository.Get(c => c.FullName.Contains(txtFilter.Text) || c.Phone.ToString().Contains(txtFilter.Text) || c.CustomerID.ToString().Contains(txtFilter.Text));
                     }
                 }
                 catch
