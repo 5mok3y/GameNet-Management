@@ -169,9 +169,9 @@ namespace GameNet_Management.App
                         }
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
-                    RtlMessageBox.Show("خطا در ثبت و بررسی اطلاعات کاربری" + "\n" + ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RtlMessageBox.Show("خطا در ثبت و بررسی اطلاعات کاربری", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }

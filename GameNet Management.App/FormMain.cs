@@ -154,7 +154,7 @@ namespace GameNet_Management.App
                     {
                         DeviceCard deviceCard = new DeviceCard();
 
-                        var sessionForDevice = activeSessions.FirstOrDefault(s => s.DeviceID == device.DeviceID);
+                        var sessionForDevice = activeSessions.SingleOrDefault(s => s.DeviceID == device.DeviceID);
 
                         deviceCard.SetDeviceData(device, sessionForDevice);
                         deviceCard.DoubleClick += DeviceCard_DoubleClick;
@@ -195,7 +195,7 @@ namespace GameNet_Management.App
                     }
                     else // Device is InUse
                     {
-                        var activeSession = db.SessionsRepository.Get(s => s.DeviceID == deviceID && s.EndTime == null).FirstOrDefault();
+                        var activeSession = db.SessionsRepository.Get(s => s.DeviceID == deviceID && s.EndTime == null).SingleOrDefault();
 
                         if (activeSession == null)
                         {

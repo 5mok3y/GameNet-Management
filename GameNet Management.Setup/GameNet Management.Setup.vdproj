@@ -220,36 +220,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_77C8BED40AEBEE1957B0BF55B773B186"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C662ABEAB8A4E066729EA895E8C7148C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F1A931007F5EC4D93D2DFF35AE5A6BFB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_85CFE1B2EC8ACF34A55A435F018B6D11"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4C162BE205F8B0E9ADBD897565CCF108"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_45C800F1B5F65F61ED8E060418CC064D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -275,6 +245,36 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C7ACD0EA3CACBAF25ADF2F8729D832FD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_77C8BED40AEBEE1957B0BF55B773B186"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C662ABEAB8A4E066729EA895E8C7148C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F1A931007F5EC4D93D2DFF35AE5A6BFB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_85CFE1B2EC8ACF34A55A435F018B6D11"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4C162BE205F8B0E9ADBD897565CCF108"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -353,7 +353,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\GameNet Management.Setup.msi"
+        "OutputFilename" = "8:Release\\GameNet Manager Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -1057,7 +1057,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GameNet Manager"
         "ProductCode" = "8:{47BBD797-8DB8-4EB5-A899-D154AF354772}"
-        "PackageCode" = "8:{3C265AF1-8441-422C-8AE1-354F5A32C81D}"
+        "PackageCode" = "8:{01818535-A103-4E30-83CE-F49F1C13F8B0}"
         "UpgradeCode" = "8:{4B340016-4A66-4004-BEBB-D083DF953474}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1177,7 +1177,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_38CE3651E43249968A47AF43E7C8080F"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DD839E12BC704D67A33B9362C702C982"
             {
             "Name" = "8:GameNet Manager"
             "Arguments" = "8:"
@@ -1189,20 +1189,6 @@
             "Folder" = "8:_41F11C37CF934FA19820BA07DE10F96F"
             "WorkingFolder" = "8:_7E6CBBD13E27474390181E5C756AFE0E"
             "Icon" = "8:_FFB4487BE5314F2C88A9752DA0639E62"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BF438EC3F5124BE7B881C877E47B011E"
-            {
-            "Name" = "8:GameNet Manager"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_74331D32D5EB45D485276A43FF3A512B"
-            "Folder" = "8:_15E0C2BFB27D48F4A9D1E5E8AEB68397"
-            "WorkingFolder" = "8:_7E6CBBD13E27474390181E5C756AFE0E"
-            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
